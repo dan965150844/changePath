@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* =============================== 东方国信 / 程序研发人员专用 / 唯一样式表 / 20161008 =============================== */
+/* 背景颜色 */
+.redBg{background: #fe797b!important;}
+.greenBg{background: #5dd08d!important;}
+.yellowBg{background: #f0c86f!important;}
+.purpleBg{background: #a7a3d0!important;}
+.grayBg{ background: #f5f5f6!important;}
+.orangeBg{background: #f2bb9c!important;}
+.blue01Bg{background: #4ea0d3!important;}
+.blue02Bg{background: #3f5a95!important;}
+.blue03Bg{background: #69d3e2!important;}
+
+
+/* 指标展示块 */
+.kpi_block{ line-height: 1.8;}
+.kpi_block h3{margin: 5px;}
+.kpi_block ul li{ float: left; margin:5px;}
+.kpi_block ul li a{ text-decoration: none; display: block; text-align: center; background: #51b0d0;  color: #fff; padding: 10px; border-radius: 5px;}
+.kpi_block ul li a span{ display: block;font-size: 24px; }
+.kpi_block ul li a strong{font-weight: normal; font-size: 16px;}
+
+/* 指标展示条 */
+.kpi_block02{ line-height: 1.8;}
+.kpi_block02 h3{margin: 5px;}
+.kpi_block02 ul li{ float: left; margin:5px; width: 46%;}
+.kpi_block02 ul li a.pinkBg{background: #f57e80;}
+.kpi_block02 ul li a{ text-decoration: none; display: block; text-align: left; background: #51b0d0;  color: #fff; padding:8px 10px; border-radius: 5px;}
+
+/* 概览头部 */
+.intro_header{}
+.intro_header .kpi_block{ float: left; width: 56%;}
+.intro_header .kpi_block ul li{ width: 30%;}
+.intro_header .kpi_block02{float: right; width: 44%;position: relative; margin-right: -2%;}
+
+.kpi_block_img {width:100%;height: 30px;margin-bottom: -10px}
+.kpi_block_img span{height:20px;float: right;margin-top:5px;margin-right:10px;}
+.kpi_block_img span img{width:18px;height: 18px}
+.kpi_block_img span a{font-size: 14px;color: #0083CE;text-decoration: none;vertical-align: middle;font-weight: bold}
+
+/* 概览内容 */
+.intro_body{ margin-top: 15px; margin-left: 5px; background: #fff; border: 1px solid #ddd}
+.intro_body h3{background: #4ea0d3;  color: #fff; padding:10px; font-weight: normal; position: relative;}
+.intro_body h3 a{ position: absolute;right: 10px; top: 10px; color: #fff; font-size: 14px;}
+/* swiper */
+.intro_box.swiper-container{ height: 340px;}
+.intro_box.swiper-container .swiper-slide { height: 340px; overflow: hidden; }
+.intro_box .arrow-left,
+.intro_box .arrow-right{ visibility: hidden;}
+.intro_box.swiper-container .arrow-left,
+.intro_box.swiper-container .arrow-right{ visibility:visible;}
+.intro_box {border: 1px solid #ddd}
+.intro_box .swiper-slide{ width: 100%;}
+
+/* 审计模块 */
+.intro_box dl{ float: left; width: 33.333%;  height: 170px; background: #fff; position: relative; z-index: 1;}
+.intro_box dl dt{position: absolute;left: 10px; top: 10px;font-weight: bold;}
+.intro_box dl dt a{ color: #666666;}
+.intro_box dl dt a:hover{color: #51b0d0;}
+.intro_box dl dd{font-size: 14px;margin:30px 10px auto;}
+.intro_box dl dd ol{ margin-right: 40px;}
+.intro_box dl dd ol li{ display: inline-block; margin: 4px; font-size: 12px;}
+.intro_box dl dd ol li a{color: #999;}
+.intro_box dl dd ol li a:hover{ color: #51b0d0;}
+.intro_box dl dd ul{ position: absolute; left: 10px; bottom: 5px;}
+.intro_box dl dd ul li{display: inline-block; width: 50px; text-align: center; }
+.intro_box dl dd ul li i{font-size: 18px; color: #ccc;}
+.intro_box dl dd ul li span{ display:block; color: #999;}
+.intro_box dl dd p{position: absolute; right: 30px; bottom: 5px; font-size: 60px; color: #ccc;}
+
+#intro02{ display: none;}
+#showListBtn02{ display: none;}
+/* 悬浮效果 */
+.intro_box dl:hover{ box-shadow: 0 0 5px #999,0 0 15px #999; z-index: 2;transition: box-shadow 0.2s ease-in-out; }
+.intro_box dl:hover dt a{ color: #e6765b;}
+.intro_box dl:hover dd ul li i.fa-eyedropper{ color: #fe797b;}
+.intro_box dl:hover dd ul li i.fa-leaf{ color: #f0c86f;}
+.intro_box dl:hover dd ul li i.fa-pencil-square{ color: #69d3e2;}
+.intro_box dl:hover dd p{ color: #4ea0d3;}
+
+
+/* 审计点弹窗 */
+.shenjiList{ padding: 10px;}
+.sPoint dl{ background: #199ed9; border: 1px solid #ddd; margin-bottom: 6px; padding-left: 100px; position: relative;}
+.sPoint dl dt{ width: 100px; text-align: center; position: absolute; font-size: 24px; color: #fff; left: 0; top: 50%; margin-top: -18px; }
+.sPoint dl dd{ background: #f8f8f8;padding:10px; }
+.sPoint dl dd textarea{border: 1px solid #ddd; padding: 3px; border-radius: 5px;color: #666;}
+.sPoint dl dd p{ margin-bottom: 5px;}
+.sPoint dl dd p a.addEdit{ display: inline-block; padding: 3px 6px; border-radius: 5px; line-height: 1.5; background: #4ea0d3; color: #fff;}
+.sPoint dl dd h4{ font-size: 14px; line-height: 1.8; float: left; width: 60%;}
+.sPoint dl dd .sPoint_title{ padding-bottom: 10px;}
+.sPoint dl dd .viewBtnLink{ float: right; width: 30%; text-align: right;}
+.sPoint dl dd .viewBtnLink span.listText{ font-size: 11px; display: inline-block; margin-right: 5px;}
+.sPoint.yellowPint dl,
+.sPoint.yellowPint dl dd p a.addEdit{background: #f5ba41; }
+.sPoint.greenPint dl,
+.sPoint.greenPint dl dd p a.addEdit{background: #33c24d; }
+.sPoint.purplePint dl,
+.sPoint.purplePint dl dd p a.addEdit{background: #a653cd; }
+/* 名词解释 */
+.explain{ padding: 20px;}
+.explain dl{ position: relative; color: #666; font-size: 14px; padding:5px 10px 5px 104px; line-height: 1.8; margin-bottom: 2px;}
+.explain dl:hover{ background: #ededed;}
+.explain dl dt{ position: absolute; left: 0; top: 6px; width: 100px; text-align: right; color: #3f5a95; font-weight: bold;}
+.explain dl dd{ }
+
+/* 现场核查 */
+.scene_header{ border: 1px solid #ddd; background: #fff; padding: 8px 10px;}
+.scene_header h2{ display: inline-block; font-size: 18px;}
+.scene_header h2 span{ background: #6ccfd5; width: 24px; border-radius: 50%; height: 24px; padding: 5px; display: inline-block; text-align: center;}
+.scene_header h2 span i{ font-size: 22px; line-height: 1.2; color: #fff;}
+.scene_header p{display: inline-block; position: relative; top: -2px; margin-left: 5px;}
+.scene_header p span{ color: #82d2d9; font-weight: bold;}
+
+.sceneCon{ margin-top: 5px;  background: #fff; border: 1px solid #ddd; padding:10px 20px;}
+.sceneCon h3{ padding: 8px 0; color: #199ed9;}
+.sceneLeft{ float: left; width: 25%; }
+.sceneRight{ float: right; width: 73%;}
+.sceneLeftCon,
+.sceneRightCon{border: 1px solid #ddd;}
+.sceneLeftCon{}
+.sceneLeftCon h4{ padding:10px 6px 6px 30px;}
+.sceneLeftCon ol{ padding-bottom: 20px;}
+.sceneLeftCon ol li a{ display: block; padding: 6px 6px 6px 30px; color: #49a0d5; text-decoration: none;}
+.sceneLeftCon ol li a i{ margin-right: 5px;}
+.sceneLeftCon ol li a:hover,
+.sceneLeftCon ol li a:active{ background: #49a0d5; color: #fff;}
+
+.sceneRightCon{ background: #f8f8f8; padding: 20px 0;}
+.sceneList{ margin: 0 20px 10px; padding: 20px 30px; background: #fff; border: 1px solid #e6e6e6; position: relative;}
+.sceneList h4{font-weight: normal;}
+.sceneList .circle{position: absolute; left: 0; color: #fff; padding:0 0 0 4px;top: 0;width: 32px; height: 36px; background-position: 0 0; background-image: url("images/boncLayout/bg/jiaobiao_ico.png"); background-repeat: no-repeat;}
+.sceneList .sceneEdit{ display: none; padding: 10px;line-height: 1.8;  border: 1px solid #ddd; margin-top: 10px;}
+.sceneList .sceneEdit textarea{border: 1px solid #ddd; border-radius: 5px; color: #666;}
+.sceneList .sceneEdit p{ margin-bottom: 5px;}
+.sceneList .sceneEdit p a.addPlus{ display: inline-block; padding: 3px 6px; border-radius: 5px; line-height: 1.5px; background: #4ea0d3; color: #fff;}
+.sceneList .sceneEdit ul{ margin: 8px 20px;}
+.sceneList .sceneEdit ul li span{ color:#666; display: inline-block; min-width: 300px; }
+.sceneList .sceneEdit ul li span i{color:#4ea0d3; margin-right: 5px;}
+.sceneList .sceneEdit ul li a.downLoad{ display: inline-block;color:#4ea0d3;}
+
+.sceneList .viewBtnLink{position: absolute; top: 18px; right: 30px;}
+.sceneList.hiScene .circle{ background-position: 0 0;}
+.sceneList.midScene .circle{ background-position: 0 -40px;}
+.sceneList.bottomScene .circle{ background-position: 0 -80px;}
+.sceneList.hiScene:hover{border: 1px solid #ff7979;}
+.sceneList.midScene:hover{border: 1px solid #f2ca68;}
+.sceneList.bottomScene:hover{border: 1px solid #5bd18b;}
+
+
+.sceneBottom{ padding:10px 20px;}
+.sceneBottom p{ line-height: 1.8;}
+.sceneBottom p span{ display: inline-block; margin-left: 8px; }
+.sceneBottom p span strong{font-weight: normal; font-size: 12px;background: #49a0d5; color: #fff; display: inline-block; padding:1px 5px; margin-right: 4px; border-radius: 3px;}
+.sceneBottom p span.hiScene{color: #ff7979;}
+.sceneBottom p span.hiScene strong{background: #ff7979;}
+.sceneBottom p span.midScene{color: #f2ca68;}
+.sceneBottom p span.midScene strong{background: #f2ca68;}
+.sceneBottom p span.bottomScene{color: #5bd18b;}
+.sceneBottom p span.bottomScene strong{background: #5bd18b;}
+
+
+/* paging */
+.paging{ float:right; width:auto;}
+.paging ul{ overflow:hidden; text-align:right;}
+.paging li{ display:inline;}
+.paging li a{ background: #fff; font-size: 16px; color:#4ea0d3;  padding: 8px 10px; display:inline-block; border: 1px solid #ddd; text-align: center;width:10px; height:12px; line-height:12px;  vertical-align:middle;}
+.paging li a:hover, .paging li a:focus, .paging li a:active, .paging li a.active{ color:#fff; background:#4ea0d3; text-decoration: none;  }
+.paging li strong{ border:1px solid #fd6d01; background:#ffede1; color:#fd6d01;}
+
+
+/* 审计线索 */
+.clue_header{ border: 1px solid #ddd; background: #fff; padding: 8px 10px;}
+.clue_header h2{ display: inline-block; font-size: 18px;}
+.clue_header h2 span{ background: #f9c16c; width: 24px; border-radius: 50%; height: 24px; padding: 5px; display: inline-block; text-align: center;}
+.clue_header h2 span i{ font-size: 22px; line-height: 1.2; color: #fff;}
+.clue_header p{display: inline-block; position: relative; top: -2px; margin-left: 5px;}
+.clue_header p span{ color: #f9c16c; font-weight: bold;}
+
+/* 手风琴菜单 */
+.accordionMenuBox{position: relative; left: 0; top: 10px; display: block;text-align: center;}
+div.fsbanner {/* obrigatorio */position:relative;overflow:hidden;/* opcional */height:300px;color:#fff;}
+.fsbanner > div { position:absolute;background-size:cover;cursor:pointer;top:0;left:0;}
+.fsbanner a{color: #fff; width: 36%; display: block; text-align: center; margin-top: 15%; line-height: 30px; text-decoration: none}
+.fsbanner >div:hover a{ width: 100%; text-align: center; }
+.fsbanner li{list-style:circle;}
+.fsbanner i{font-size: 60px; padding-bottom:15px}
+.fsbanner01{background: #FF8755}
+.fsbanner02{background: #F4C02F}
+.fsbanner03{background: #8EDA90}
+.fsbanner04{background: #45C4ED}
+.fsbanner05{background: #AECE47}
+.fsbanner06{background: #FF8F91}
+.fsbanner07{background: #14E0DD}
+.fsbanner08{background: #0E78B5}
+
+
+/* 审计发现 */
+.map_header{ border: 1px solid #ddd; background: #fff; padding: 8px 10px;}
+.map_header h2{ display: inline-block; font-size: 18px;}
+.map_header h2 span{ background: #f77c7e; width: 24px; border-radius: 50%; height: 24px; padding: 5px; display: inline-block; text-align: center;}
+.map_header h2 span i{ font-size: 22px; line-height: 1.2; color: #fff;}
+.map_header p{display: inline-block; position: relative; top: -2px; margin-left: 5px;}
+.map_header p span{ color: #f77c7e; font-weight: bold;}
+
+/*Tab导航色块*/
+#navTabs {position: relative; left: 0; top: 0; display: block;line-height: 1.8; }
+#navTabs ul.navHeaderS li{display: inline-block;float:left; width:24%; margin:1% 1% 0 0; text-align: left;}
+#navTabs ul.navHeaderS li:last-child,
+#navTabs ul.navHeaderS li.last-child{ width: 25%; margin-right: 0;}
+#navTabs ul.navHeaderS li a{position:relative; float: left; color: #fff;  width:96%; padding: 2%;  min-height: 200px; text-decoration: none; border-radius: 5px;display: block; }
+#navTabs ul.navHeaderS h3{margin-left: 10px}
+#navTabs ul.navHeaderS h3>span{font-size: 32px; font-weight: bold; padding-right: 20px}
+#navTabs ul.navHeaderS dl{border-bottom: 1px solid #fff;width: 70%; margin:0  15%;}
+#navTabs ul.navHeaderS dt{line-height:35px;}
+#navTabs ul.navHeaderS dt>span{font-size:14px; padding-right:18px; }
+#navTabs ul.navHeaderS dt>i {font-size:16px; padding-right:18px; width: 20px}
+#navTabs ul.navHeaderS dt>small{font-size:14px;background:rgba(255, 255, 255, 0.2); }
+#navTabs ul.navHeaderS dd{font-size:80px; position: absolute; bottom: 0; right: 0;margin-right: 15px;color:rgba(255, 255, 255, 0.4); }
+#navTabsContent{ margin-top: 10px;}
+
+.navTab01{background-color:#199ed8}
+.navTab01:hover{background-color:#1295ce}
+.navTab01:focus{background-color:#1295ce}
+.navTab01:active{background-color:#0584bc}
+
+.navTab02{background-color:#f5ba42}
+.navTab02:hover{background-color:#eaaf37}
+.navTab02:focus{background-color:#eaaf37}
+.navTab02:active{background-color:#d89d24}
+
+.navTab03{background-color:#32c24d}
+.navTab03:hover{background-color:#2bb244}
+.navTab03:focus{background-color:#2bb244}
+.navTab03:active{background-color:#21a43a}
+
+.navTab04{background-color:#a653cd}
+.navTab04:hover{background-color:#9946c0}
+.navTab04:focus{background-color:#9946c0}
+.navTab04:active{background-color:#8c3ab3}
+
+
+

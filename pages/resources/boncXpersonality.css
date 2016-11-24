@@ -1,0 +1,154 @@
+﻿@charset "utf-8";
+/*程序员专用 */
+
+/*客户名片*/
+.ClientNameCard{width: 98%;margin-left: 1%;height: 100%;color: #39476a;}
+.ClientNameCard h3{line-height: 45px;height:45px; border-bottom: 1px solid #dedede; }
+.ContentBlockClient{margin-top: 25px;}
+.ContentBlockClient .ContentBlockLeft{float: left;margin:0 30px 0 15px;text-align: center;}
+.ContentBlockClient .ContentBlockLeft .boncIconBlock{background:#3399ff; border-radius: 100%;height:100px;width:100px;position: relative; }
+.ContentBlockClient .ContentBlockLeft h2{line-height: 48px}
+.ContentBlockClient .ContentBlockLeft .boncIconBlock i{position: absolute; left: 22%; top:22%;color: #fff;}
+.ContentBlockClient .ContentBlockLeft .boncIconStars i{color: #ff7373;font-size: 130%;padding-left:5px}
+.ContentBlockClient .ContentBlockRight dl{overflow:hidden; height:100%;}
+.ContentBlockClient .ContentBlockRight dl dt{float:left;clear:left; padding-bottom: 6px;}
+.ContentBlockClient .ContentBlockRight dl dd{display:table;padding-bottom: 6px;}
+.ContentBlockClient .ContentBlockRight ol{margin-top: 15px}
+.ContentBlockClient .ContentBlockRight ol>li{display: inline-block;color: #fff;padding:4px 8px; margin-right:4px;}
+.ContentBlockClient .ContentBlockRight ol>li.red{background-color: #e2673a}
+.ContentBlockClient .ContentBlockRight ol>li.yellow{background-color: #ffa626}
+.ContentBlockClient .ContentBlockRight ol>li.green{background-color: #7d56c9}
+.ContentBlockClient .ContentBlockRight ol>li.purple{background-color: #45b854 }
+.ContentBlockClient .ContentBlockRight h2 em{margin-left: 10px}
+.ContentBlockClient .ContentBlockRight p{margin:6px 0 15px 0}
+
+/*互联网偏好*/
+.InternetPreference{width:32%;margin-left: 1%;height: 100%;color: #39476a;}
+.InternetPreference h3{line-height: 45px;height:45px; border-bottom: 1px solid #dedede; }
+.ContentBlockInternet ol{margin-top: 15px;}
+.ContentBlockInternet ol>li{float:left;height:80px ;width: 80px;border-radius: 100%;text-align: center;margin-left:15px}
+.ContentBlockInternet ol>li p{color: #fff;margin-top: 20px}
+.ContentBlockInternet ol>li.red{background-color: #ed5e60;margin-top: 40px}
+.ContentBlockInternet ol>li.lightGreen{background-color: #5cd1b9;}
+.ContentBlockInternet ol>li.green{background-color: #3ea332}
+.ContentBlockInternet ol>li.blue{background-color: #3499cb }
+.ContentBlockInternet ol>li.orange{background-color: #ffa52a;margin-top: 40px }
+.ContentBlockInternet .dls{margin-left: -1%}
+.ContentBlockInternet .dls dl{width:49%;margin-left:1%;float: left; background:#465866;color: #fff;margin-top:25px}
+.ContentBlockInternet .dls dl dt{float:left;clear:left; padding-bottom: 6px;margin-left: 15px}
+.ContentBlockInternet .dls dl dd{display:table;padding-bottom: 6px;}
+
+/* 渠道接触轨迹 */
+.locus{ width:150%;white-space: nowrap; margin: 50px 0;}
+.locus dl{ display: inline-block; width: 120px;}
+.locus dl dt,
+.locus dl dd{ padding-left: 10px;}
+.locus dl .greyLine{ background: #f8f8f8;}
+.locus dl dd span{ display: block; padding-left: 0 !important; padding-right: 10px; color: #fff; text-align: center; width: 110px; height: 27px; line-height: 27px;}
+.locus .recharge dt{ color: #475967;}
+.locus .recharge dd span{ background: url("images/bg/span_recharge.gif") no-repeat;}
+.locus .custom dt{ color: #ED6061;}
+.locus .custom dd span{ background: url("images/bg/span_custom.gif") no-repeat;}
+.locus .service dt{ color: #4CB4A5;}
+.locus .service dd span{ background: url("images/bg/span_service.gif") no-repeat;}
+
+/*产品变更轨迹_dan*/
+/* .tempBlock{ padding:10px; width:25%;} */
+.changeTrack{ width:100%; height:239px; border-bottom:1px solid #ddd; background:#fff;}
+.changeTrack h3{ padding-left:4%; width:96%; height:39px; line-height:39px; border-bottom:1px solid #ddd; font-size:16px; color:#56688a; font-weight:bold;}
+.changeTrack .tabTit{ padding-right:4%; width:96%; height:39px; text-align:right; border-bottom:1px solid #ddd;}
+.changeTrack .tabTit span{ margin:0 2%; padding:4px 15px; line-height:39px; text-align:center; border-radius:15px; color:#fff; cursor:pointer;}
+.changeTrack .tabTit span.bgBlueTrack{ background:#3399ff;}
+.changeTrack .tabTit span.colBlueTrack{ color:#3399ff!important;}
+.changeTrack .tabShow{ width:100%; height:160px;}
+.changeTrack .tabShow .datagrid-header, .changeTrack .tabShow .datagrid-td-rownumber { background-color:#f5f9fd;}
+.changeTrack .tabShow .datagrid-header, .changeTrack .tabShow .datagrid-toolbar, .changeTrack .tabShow .datagrid-pager, .changeTrack .tabShow .datagrid-footer-inner { border-color: #ddd;}
+.changeTrack .tabShow .datagrid-header td, .changeTrack .tabShow .datagrid-body td, .changeTrack .tabShow .datagrid-footer td { border:none;}
+.changeTrack .tabShow .datagrid-header td{ background:#f5f9fd; color:#39c;}
+.changeTrack .tabShow .datagrid-header tr:nth-last-child(odd), .changeTrack .tabShow .datagrid-body tr:nth-last-child(odd), .changeTrack .tabShow .datagrid-footer tr:nth-last-child(odd) { background:#f7f8f9;}
+.changeTrack .tabShow .timeTree{ width:100%; height:160px; overflow-x:auto; overflow-y:hidden; white-space:nowrap;}
+.changeTrack .tabShow .timeTree ul{ margin:20px 2%; width:96%; height:120px;}
+.changeTrack .tabShow .timeTree ul li{ /* display:inline-block; */ float:left; min-width:86px; height:120px; background-position:center 20px; background-repeat:no-repeat;}
+.changeTrack .tabShow .timeTree ul li em, .changeTrack .tabShow .timeTree ul li span{ display:block; font-style:normal; font-size:14px; text-align:center; line-height:14px;}
+.changeTrack .tabShow .timeTree ul li.type1 span, .changeTrack .tabShow .timeTree ul li.type3 span{ padding-top:55px;}
+.changeTrack .tabShow .timeTree ul li.type2 span, .changeTrack .tabShow .timeTree ul li.type4 span{ padding-top:88px;}
+.changeTrack .tabShow .timeTree ul li.type1{ color:#75cbc9; background-image:url(images/bg/trackBlueTree.png);}
+.changeTrack .tabShow .timeTree ul li.type2{ color:#fec339; background-image:url(images/bg/trackYellowTree.png);}
+.changeTrack .tabShow .timeTree ul li.type3{ color:#ff614e; background-image:url(images/bg/trackRedTree.png);}
+.changeTrack .tabShow .timeTree ul li.type4{ color:#7ec89d; background-image:url(images/bg/trackGreenTree.png);}
+
+/*营销活动_dan*/
+.marketActivity{ width:100%; min-height:239px; border-bottom:1px solid #ddd; background:#fff;}
+.marketActivity h3{ padding-left:4%; width:96%; height:39px; line-height:39px; border-bottom:1px solid #ddd; font-size:16px; color:#56688a; font-weight:bold;}
+.marketActivity .mainShow{ width:100%; height:200px;}
+.marketActivity .mainShow .datagrid-header, .marketActivity .mainShow .datagrid-td-rownumber { background-color:#f5f9fd;}
+.marketActivity .mainShow .datagrid-header, .marketActivity .mainShow .datagrid-toolbar, .marketActivity .mainShow .datagrid-pager, .marketActivity .mainShow .datagrid-footer-inner { border-color: #ddd;}
+.marketActivity .mainShow .datagrid-header td, .marketActivity .mainShow .datagrid-body td, .marketActivity .mainShow .datagrid-footer td { border:none;}
+.marketActivity .mainShow .datagrid-header td{ background:#f5f9fd; color:#39c;}
+.marketActivity .mainShow .datagrid-header tr:nth-last-child(odd), .marketActivity .mainShow .datagrid-body tr:nth-last-child(odd), .marketActivity .mainShow .datagrid-footer tr:nth-last-child(odd) { background:#f7f8f9;}
+
+/*产品订购信息_dan*/
+.orderInform{ width:100%; min-height:239px; border-bottom:1px solid #ddd; background:#fff;}
+.orderInform h3{ padding-left:4%; width:96%; height:39px; line-height:39px; border-bottom:1px solid #ddd; font-size:16px; color:#56688a; font-weight:bold;}
+.orderInform .orderShow{ width:100%; height:200px;}
+.orderInform .orderShow .datagrid-header, .orderInform .orderShow .datagrid-td-rownumber { background-color:#f5f9fd;}
+.orderInform .orderShow .datagrid-header, .orderInform .orderShow .datagrid-toolbar, .orderInform .orderShow .datagrid-pager, .orderInform .orderShow .datagrid-footer-inner { border-color: #ddd;}
+.orderInform .orderShow .datagrid-header td, .orderInform .orderShow .datagrid-body td, .orderInform .orderShow .datagrid-footer td { border:none;}
+.orderInform .orderShow .datagrid-header td{ background:#f5f9fd; color:#39c;}
+.orderInform .orderShow .datagrid-header tr:nth-last-child(odd), .orderInform .orderShow .datagrid-body tr:nth-last-child(odd), .orderInform .orderShow .datagrid-footer tr:nth-last-child(odd) { background:#f7f8f9;}
+
+/*欠费轨迹_dan*/
+.owePath{ width:100%; min-height:400px; border-bottom:1px solid #ddd; background:#fff;}
+.owePath h3{ padding-left:4%; width:96%; height:39px; line-height:39px; border-bottom:1px solid #ddd; font-size:16px; color:#56688a; font-weight:bold;}
+.owePath .oweShow{ width:100%; height:360px;}
+.owePath .oweShow .charBlock{ margin:20px 2% 0; width:95%; height:350px;}
+
+/*流量使用_dan*/
+.useFlow{ width:100%; min-height:500px; border-bottom:1px solid #ddd; background:#fff;}
+.useFlow h3{ padding-left:4%; width:96%; height:39px; line-height:39px; border-bottom:1px solid #ddd; font-size:16px; color:#56688a; font-weight:bold;}
+.useFlow .useShow{ width:100%; height:460px;}
+.useFlow .useShow .useLeft{ float:left; width:40%; height:460px; border-right:1px solid #ddd;}
+/*流量使用*/
+.TrafficUsage01,
+.TrafficUsage02,
+.TrafficUsage03,
+.TrafficUsage04{margin:15px 0 0 10%; width:90%;color: #666;}
+.TrafficUsage01 .DLLeft,
+.TrafficUsage02 .DLLeft,
+.TrafficUsage03 .DLLeft{width:26%;overflow: hidden;float: left}
+.TrafficUsage01 .DLRight,
+.TrafficUsage02 .DLRight,
+.TrafficUsage03 .DLRight{width: 73%;overflow: hidden;float: left}
+.TrafficUsage01 .DLLeft dl,
+.TrafficUsage02 .DLLeft dl,
+.TrafficUsage03 .DLLeft dl{color: #666;overflow: hidden;}
+.TrafficUsage01 .DLLeft dl dt,
+.TrafficUsage02 .DLLeft dl dt,
+.TrafficUsage03 .DLLeft dl dt{float: left;margin-top: 14px;}
+.TrafficUsage01 .DLLeft dl dd,
+.TrafficUsage02 .DLLeft dl dd,
+.TrafficUsage03 .DLLeft dl dd{float: left;margin-top: 14px;}
+.TrafficUsage01 dl dd,
+.TrafficUsage02 dl dd,
+.TrafficUsage03 dl dd{float: left;color:#3399FF;font-weight: bolder;}
+.TrafficUsage01 .DLRight dl,
+.TrafficUsage02 .DLRight dl,
+.TrafficUsage03 .DLRight dl{color: #666;overflow: hidden;display: inline-block}
+.TrafficUsage01 .DLRight dl.LastDL,
+.TrafficUsage02 .DLRight dl.LastDL{margin-left:26px;}
+.TrafficUsage03 .DLRight dl.LastDL{margin-left:14px;}
+.TrafficUsage01 .DLRight dl dt,
+.TrafficUsage02 .DLRight dl dt,
+.TrafficUsage03 .DLRight dl dt{float: left;}
+.TrafficUsage01 .DLRight dl dt strong,
+.TrafficUsage02 .DLRight dl dt strong,
+.TrafficUsage03 .DLRight dl dt strong{border-right:1px solid #777;padding-right:5px;}
+.TrafficUsage01 .progressBox,
+.TrafficUsage02 .progressBox,
+.TrafficUsage03 .progressBox{width: 69%}
+.TrafficUsage01 .progressBox .progress,
+.TrafficUsage02 .progressBox .progress,
+.TrafficUsage03 .progressBox .progress{height: 10px;margin-top:5px}
+.TrafficUsage04{font-size: 16px; color:#3399FF;font-weight: bolder;}
+.useFlow .useShow .useRight{ float:right; width:59.5%;}
+.useFlow .useShow .useRight .charBlock{ margin:20px 2% 0; width:95%; height:440px;}
