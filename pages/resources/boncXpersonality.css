@@ -1,6 +1,44 @@
 ﻿@charset "utf-8";
 /*程序员专用 */
 
+body{ background:#f2f2f2;}
+
+/* temp11.25 cardPages */
+.cardPages{ width:480px; margin:20px; background:#fff;}
+.cardPages .cardHeader{ width:100%; height:39px; border-bottom:1px solid #ddd;}
+.cardPages .cardHeader h2{ padding-left:5%; line-height:39px; color:#414f69; font-size:16px;}
+.cardPages .cardBody{ width:100%;}
+.cardPages .cardBody .cardLeft{ position:absolute; left:0; width:120px; text-align:center;}
+.cardPages .cardBody .cardLeft > i{ margin-top:35px; width:65px; height:65px; background:#09f; line-height:1.5; border-radius:100%; color:#fff;}
+.cardPages .cardBody .cardLeft h4{ color:#414f69; font-size:14px; font-weight:normal; line-height:2;}
+.cardPages .cardBody .cardLeft p i{ color:#ff7474;}
+.cardPages .cardBody .cardRight{ padding-left:120px; color:#414f69; line-height:2; overflow:hidden;}
+.cardPages .cardBody .cardRight h3{ display:inline-block; font-size:20px;}
+.cardPages .cardBody .cardRight span{ font-size:18px; padding:0 5px;}
+.cardPages .cardBody .cardRight em{ font-size:16px;}
+.cardPages .cardBody .cardRight p{ color:#414f69;}
+.cardPages .cardBody .cardRight p i{ margin-right:5px;}
+.cardPages .cardBody .cardRight ul{}
+.cardPages .cardBody .cardRight ul li{}
+.cardPages .cardBody .cardRight ol{}
+.cardPages .cardBody .cardRight ol li{ float:left; margin:5px 0 8px; padding:0 5px; margin-right:5px; color:#fff; text-align:center;}
+.cardPages .cardBody .cardRight ol li.type1{ background:#e2673a;}
+.cardPages .cardBody .cardRight ol li.type2{ background:#ffa626;}
+.cardPages .cardBody .cardRight ol li.type3{ background:#7d56c9;}
+.cardPages .cardBody .cardRight ol li.type4{ background:#45b854;}
+
+
+
+
+
+
+
+
+/* temp11.25 cardPages */
+
+
+
+
 /*客户名片*/
 .ClientNameCard{width: 98%;margin-left: 1%;height: 100%;color: #39476a;}
 .ClientNameCard h3{line-height: 45px;height:45px; border-bottom: 1px solid #dedede; }
