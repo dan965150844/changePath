@@ -21,7 +21,7 @@ body{ background:#f2f2f2;}
 .cardPages .cardBody .cardRight ul{}
 .cardPages .cardBody .cardRight ul li{}
 .cardPages .cardBody .cardRight ol{}
-.cardPages .cardBody .cardRight ol li{ float:left; margin:5px 0 8px; padding:0 5px; margin-right:5px; color:#fff; text-align:center;}
+.cardPages .cardBody .cardRight ol li{ float:left; margin:5px 5px 8px 0; padding:0 5px; color:#fff; text-align:center;}
 .cardPages .cardBody .cardRight ol li.type1{ background:#e2673a;}
 .cardPages .cardBody .cardRight ol li.type2{ background:#ffa626;}
 .cardPages .cardBody .cardRight ol li.type3{ background:#7d56c9;}
