@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--声明以IE最高版本浏览器内核或谷歌浏览器内核进行渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--声明以360极速模式进行渲染 -->
+    <meta name=”renderer” content=”webkit” />
+    <!--系统名称文本 -->
+    <title>easyframework_UI1.5_Ver1.0</title>
+    <!-- 系统ICON图标（注:路径为TomCat根目录） -->
+    <link rel ="Shortcut Icon" href="" />
+    <!--EasyUI1.5 Js脚本 -->
+    <script type="text/javascript" src="../resources/component/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/component/easyui/jquery.easyui.min.js"></script>
+    <!--EasyUI1.5 Css层叠样式表 -->
+    <link type="text/css" rel="stylesheet" href="../resources/component/easyui/themes/salesforce/easyui.css">
+    <link type="text/css" rel="stylesheet" href="../resources/component/easyui/themes/icon.css">
+    <!--icheck 脚本库 -->
+    <link type="text/css" rel="stylesheet" href="../resources/component/icheck/icheck.css">
+    <script type="text/javascript" src="../resources/component/icheck/icheck.min.js"></script>
+    <!--FontAwesome库 -->
+    <link href="../resources/component/fontawesome/boncFont.min.css" rel="stylesheet" type="text/css">
+    <link href="../resources/component/fontawesome/boncFont-ie7.min.css" rel="stylesheet" type="text/css">
+    <!-- 独立js脚本 -->
+    <script type="text/javascript" src="../resources/themes/base/js/boncCommon.js"></script>
+    <!-- 独立Css层叠样式表 -->
+    <link type="text/css" rel="stylesheet" href="../resources/themes/base/boncBase@links.css">
+    <link type="text/css" rel="stylesheet" href="resources/boncXpersonality.css">
+</head>
+<body>
+	<div class="tempBlock">
+    	<div class="useFlow">
+        	<h3>流量使用</h3>
+            <div class="useShow">
+				 <div class="useLeft">
+				 	<!-- 进度条 -->
+				 	<div class="TrafficUsage01">
+				        <div class="DLLeft">
+				            <dl>
+				                <dt>赠流量：</dt>
+				                <dd>184343.38M</dd>
+				            </dl>
+				        </div>
+				        <div class="DLRight">
+				            <dl>
+				                <dt> <strong>结转</strong> 已使用: </dt>
+				                <dd>1221.11M</dd>
+				            </dl>
+				            <dl class="LastDL">
+				                <dt>总流量:</dt>
+				                <dd>184343.38M</dd>
+				            </dl>
+				            <div class="progressBox">
+				                <div class="progress progress-success">
+				                    <div class="bar" style="width: 20%"></div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="TrafficUsage02">
+				        <div class="DLLeft">
+				            <dl>
+				                <dt>使用量：</dt>
+				                <dd>184343.38M</dd>
+				            </dl>
+				        </div>
+				        <div class="DLRight">
+				            <dl>
+				                <dt> <strong>套餐</strong> 已使用: </dt>
+				                <dd>1221.11M</dd>
+				            </dl>
+				            <dl class="LastDL">
+				            <dt class="2th">总流量:</dt>
+				                <dd>184343.38M</dd>
+				            </dl>
+				            <div class="progressBox">
+				                <div class="progress progress-danger">
+				                    <div class="bar" style="width: 60%;height:10px"></div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="TrafficUsage03">
+				    <div class="DLLeft">
+				        <dl>
+				            <dt>举出量：</dt>
+				            <dd>0M</dd>
+				        </dl>
+				    </div>
+				    <div class="DLRight">
+				        <dl>
+				            <dt> <strong>可选包</strong> 已使用: </dt>
+				            <dd>1221.11M</dd>
+				        </dl>
+				        <dl class="LastDL">
+				            <dt>总流量:</dt>
+				            <dd>184343.38M</dd>
+				        </dl>
+				        <div class="progressBox">
+				            <div class="progress progress-warning">
+				                <div class="bar" style="width: 40%"></div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				    <div class="TrafficUsage04">平均每天使用：93M    剩余流量可满足用户需求</div>
+				 	<!-- //进度条 -->
+				 </div>
+				 <div class="useRight">
+				 	<div class="charBlock" id="main02">
+				        <!-- 样例 -->
+				    </div>
+				    <script type="text/javascript">
+				        // 基于准备好的dom，初始化echarts实例
+				        var myChart = echarts.init(document.getElementById('main02'));
+				        
+				        option = {
+				        	    title: {
+				        	        text: '',
+				        	        subtext: '',
+				        	        left:'center',
+				        	        textStyle:{
+				        	        	fontSize:18,
+				        	        	fontWeight:'normal',
+				        	        	color:'#444'
+				        	        },
+				        	        subtextStyle:{
+				        	        	fontSize:14,
+				        	        	color:'#999'
+				        	        }
+				        	    },
+				        	    tooltip: {
+				        	        trigger: 'axis',
+				        	        axisPointer:{
+				        	        	type:'line',
+				        	        	lineStyle:{
+				        	        		color:'#ccc',
+				        	        		width:1,
+				        	        		type:'solid'
+				        	        	}
+				        	        }
+				        	    },
+				        	    legend: {
+				        	        data:['总流量','使用量','溢出量'],
+				        	        top:'1%',
+				        	        textStyle:{
+				        	        	color:'#666'
+				        	        }
+				        	    },
+				        	    grid:{
+				        	    	x:30,
+				        	    	x2:20,
+				        	    	y:60,
+				        	    	y2:60,
+				        	    	width:'',
+				        	    	height:''
+				        	    },
+				        	    toolbox: {
+				        	        show: true,
+				        	        feature: {
+				        	            dataZoom: {
+				        	                yAxisIndex: 'none'
+				        	            },
+				        	            dataView: {readOnly: false},
+				        	            magicType: {type: ['line', 'bar']},
+				        	            restore: {},
+				        	            saveAsImage: {}
+				        	        }
+				        	    },
+				        	    xAxis:  {
+				        	        type: 'category',
+				        	        axisLine:{
+				        	        	lineStyle:{
+				        	        		color:'#ccc'
+				        	        	}
+				        	        },
+				        	        axisTick:{
+				        	        	lineStyle:{
+				        	        		color:'#ccc'
+				        	        	}
+				        	        },
+				        	        axisLabel:{
+				        	        	textStyle:{
+				        	        		color:'#666'
+				        	        	}
+				        	        },
+				        	        boundaryGap: false,
+				        	        data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+				        	    },
+				        	    yAxis: {
+				        	        type: 'value',
+				        	        splitLine:{
+				        	        	show:false
+				        	        },
+				        	        axisLine:{
+				        	        	lineStyle:{
+				        	        		color:'#ccc'
+				        	        	}
+				        	        },
+				        	        axisTick:{
+				        	        	lineStyle:{
+				        	        		color:'#ccc'
+				        	        	}
+				        	        },
+				        	        axisLabel:{
+				        	        	textStyle:{
+				        	        		color:'#666'
+				        	        	}
+				        	        }
+				        	    },
+				        	    series: [
+				        	        {
+				        	            name:'总流量',
+				        	            type:'line',
+				        	            data:[11, 11, 15, 13, 12, 13, 10,12,15,11,14,10],
+				        	            color:['#0a82d3']
+				        	        },
+				        	        {
+				        	            name:'使用量',
+				        	            type:'line',
+				        	            data:[1, 3, 2, 5, 3, 2, 5,8,5,3,5,4],
+				        	            color:['#41a330']
+				        	        },
+				        	        {
+				        	            name:'溢出量',
+				        	            type:'line',
+				        	            data:[8, 6, 9, 7, 5, 9, 2,7,3,1,4,8],
+				        	            color:['#ed6061']
+				        	        }
+				        	    ]
+				        	};
+				        
+						// 使用刚指定的配置项和数据显示图表。
+				        myChart.setOption(option);
+				</script>
+				 	
+				 </div>           	
+            </div>
+        </div>
+    </div>
+</body>
+</html>
